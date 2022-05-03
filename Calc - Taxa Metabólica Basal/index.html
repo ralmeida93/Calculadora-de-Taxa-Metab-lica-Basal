@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-geral">
+      <div class="container-conteudo">
+        <h1 class="titulo">Calculate TMB</h1>
+        <ul>
+          <li>
+            <label for="sexo" class="sex">Sexo:</label>
+            <p class="p-genero">
+              Homem<input type="radio" name="sexo" value="masc" /> 
+              Mulher<input type="radio" name="sexo" value="fam" />
+            </p>
+          </li>
+          <li>
+            <label for="peso">Peso</label>
+            <input type="number" name="peso" id="peso" placeholder="Kg" />
+          </li>
+          <li>
+            <label for="alt">Altura</label>
+            <input type="number" name="alt" id="alt" placeholder="cm" />
+          </li>
+          <li>
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" placeholder="anos" />
+          </li>
+        </ul>
+        <button class="btn">Calcular</button>
+      </div>
+
+      <h3>Sua Taxa metábolica basal é:</h3>
+      <div class="resultado-total"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
